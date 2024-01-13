@@ -1,11 +1,11 @@
 # python_project
-list:
-## machine_vision.py
-##recursive_function_x_y_sum_search.py
-
-
-
+#list:
 ### machine_vision.py
+### recursive_function_x_y_sum_search.py
+
+
+
+## machine_vision.py
 input:
 ```
  _   _
@@ -14,7 +14,7 @@ input:
 ```
 output:
 ```6214```
-### recursive_function_x_y_sum_search.py
+## recursive_function_x_y_sum_search.py
 This code defines a recursive function F(x, y, n) that takes three arguments: x, y, n. The function checks if the sum of x and y greater than 39 when n is equal to 1. If n is not equal to 1 the function recursively calls itself with either x or y updated to be the sum of the current value and itself, depending on which value is larger.
 
 The code also initializes an empty list m to store the sums of x and y for which the function F returns True. The list m is populated by iterating over all possible values of x and y from 0 to 19, and checking if F(x, y, 0) returns True.
