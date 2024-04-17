@@ -1,4 +1,5 @@
 # python_project
+[https://img.shields.io/badge/Ru-37a779?style=for-the-badge][Ru.md[
 # list:
 ### machine_vision.py
 ### recursive_function_x_y_sum_search.py
