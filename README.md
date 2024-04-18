@@ -1,5 +1,5 @@
 
-[![Rubut](https://img.shields.io/badge/Ru-37a779?style=for-the-badge)](github.com/Gvit0/python_project/RU.md)
+[![Rubut](https://img.shields.io/badge/Ru-37a779?style=for-the-badge)](https://github.com/Gvit0/python_project/blob/main/RU.md)
 # list:
 ### machine_vision.py
 ### recursive_function_x_y_sum_search.py
