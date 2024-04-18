@@ -112,6 +112,11 @@ table_mend=[
 ]
 
 
+upReg= "QWERTYUIOPASDFGHJKLZXCVBNM"
+downReg= "qwertyuiopasdfghjklzxcvbnm"
+num ="1234567890"
+funcSumbol = "+="
+
 def get_use_id(id_):
     for dobject in table_mend:
         if id_ == dobject.get("id"):
