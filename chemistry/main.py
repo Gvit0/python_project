@@ -1,19 +1,22 @@
-import mend_tab as mb
+import mend_table as MT
+import handler
+import calc
 
+print("Добро пожаловать в химический калькулятор!")
 
+def PrintMenu():
+	print("возможности:")
+	print("1) текстовая формула в формулу")
+	print("2) формула в текстовую ")
+	print("3) название формулы")
 
-
-
-
-
-def search(types_,value_,returntype_=1):
-    if types_ == "id":
-        if returntype_ == 1:
-            return mb.get_use_id(value_)
-        else:
-            return mb.get_use_id(value_)["name"],mb.get_use_id(value_)["atom_mas"],mb.get_use_id(value_)["id"]
-    elif types_ == "name":
-        if returntype_ == 1:
-            return mb.get_use_name(value_)
-        else:
-            return mb.get_use_name(value_)["name"],mb.get_use_id(value_)["atom_mas"],mb.get_use_id(value_)["id"]
+def MenuInput(InMen):
+	if int(InMen)== 1:
+		calc.TextToFormul(input("Введите формулу"))
+	if int(InMen) ==0:
+		print(handler.FormulToMass(input("формула:")))
+		
+while True:
+	PrintMenu()
+	MenuInput(input("Номер меню: "))
+	
