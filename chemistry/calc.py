@@ -1,0 +1,2 @@
+def TextToFormul(text):
+	pass
