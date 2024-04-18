@@ -5,37 +5,28 @@ def FormulToMass(formulIn):
 	formulNumb = 1
 	tempMass =[]
 	tempForm = ""
+
+	newF = True
 	for sumbol in formulIn:
-		if sumbol in MT.upReg and status=="nil":
+		if sumbol in MT.upReg and newF:
+			newF = False
 			tempForm += sumbol
-			status = "ReadForm"
-			
-			t =1
-		elif sumbol in MT.downReg and status =="ReadForm":
+		elif sumbol in MT.downReg:
 			tempForm += sumbol
-			
-			t=2
-		elif sumbol in MT.upReg and status =="ReadForm":
-			status = "nil"
+		elif sumbol in MT.num:
+			tempForm += sumbol
+		elif sumbol in MT.upReg:
 			tempMass.append(tempForm)
-			tempForm=sumbol
-			
-			t=3
-		elif sumbol in MT.funcSumbol:
-			status = "nil"
-			formul.append(tempMass)
-			formul.append([sumbol])
-			
-			t=4
-		elif sumbol in MT.upReg and status== "ReadForm":
-			status = "nil"
-			tempMass.append(tempForm)
-			tempForm=sumbol
-			
-			t=5
+			tempForm = sumbol
 		elif sumbol == " ":
 			pass
-		print(str(formul)+str(tempMass)+tempForm)
+		elif sumbol in MT.funcSumbol:
+			tempMass.append(tempForm)
+			formul.append(tempMass)
+			formul.append([sumbol])
+			tempMass = []
+			tempForm = ""
+		#print(str(formul)+str(tempMass)+tempForm+ str(t))
 	tempMass.append(tempForm)
 	formul.append(tempMass)
 	return formul
