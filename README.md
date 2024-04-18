@@ -1,5 +1,6 @@
 # python_project
 ![Rubut](https://img.shields.io/badge/Ru-37a779?style=for-the-badge)
+[Rubut]: RU.md
 # list:
 ### machine_vision.py
 ### recursive_function_x_y_sum_search.py
