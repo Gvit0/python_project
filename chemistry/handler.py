@@ -29,4 +29,8 @@ def FormulToMass(formulIn):
 		#print(str(formul)+str(tempMass)+tempForm+ str(t))
 	tempMass.append(tempForm)
 	formul.append(tempMass)
+	for obje in formul:
+		for obj in obje:
+			if obj == "" or obj == " ":
+				obj.remove(obj)
 	return formul
